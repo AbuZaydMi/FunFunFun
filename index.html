@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FunFunFun — Project Portfolio v2.0</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="version-badge">Site Version 2.0</p>
+        <h1>FunFunFun Projects Dashboard</h1>
+        <p>
+          New site version with a refreshed layout and live "latest update" timestamps
+          across all projects.
+        </p>
+      </header>
+
+      <section>
+        <div class="section-header">
+          <h2>Latest status on all projects</h2>
+          <p id="generatedAt"></p>
+        </div>
+        <div id="projectGrid" class="project-grid"></div>
+      </section>
+    </main>
+
+    <template id="projectCardTemplate">
+      <article class="project-card">
+        <div class="project-card__top">
+          <h3 class="project-name"></h3>
+          <span class="project-status"></span>
+        </div>
+        <p class="project-summary"></p>
+        <dl>
+          <div>
+            <dt>Progress</dt>
+            <dd class="project-progress"></dd>
+          </div>
+          <div>
+            <dt>Last update</dt>
+            <dd class="project-updated"></dd>
+          </div>
+          <div>
+            <dt>Owner</dt>
+            <dd class="project-owner"></dd>
+          </div>
+        </dl>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
